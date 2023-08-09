@@ -17,7 +17,7 @@ nvidia/cuda devel image to build the ethminer binary. In the second
 stage, I copy the build artifacts to a new image dependent on
 nvidia/cuda runtime.
 
-The entrypoint for the final image is /opt/ethminer/ethminer.
+The entrypoint for the final image is /opt/rethminer/rethminer.
 
 This provides the ability to pass arguments at container execution time. For
 example:
@@ -47,7 +47,7 @@ listed in the [CUDA Supported Tags](https://gitlab.com/nvidia/container-images/c
 An example is below:
 
 ```
-$ docker build --build-arg CUDA_VERSION=10.0 -t kriation/ethminer:10.0 .
+$ docker build --build-arg CUDA_VERSION=10.0 -t paymentz/rethminer:10.0 .
 ```
 
 The resulting image will be based off of the CUDA 10.0 base.
